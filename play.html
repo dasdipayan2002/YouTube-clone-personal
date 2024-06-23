@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=div, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Play Video</title>
+</head>
+
+<body>
+
+    <!-- ------------------------navbar---------------- -->
+    <nav class="flex-div">
+
+        <div class="nav-left flex-div">
+            <img src="images/menu.png" class="menu-icon" onclick="collapse()" alt="">
+            <img src="img/logo.PNG" class="logo" alt="">
+        </div>
+        <div class="nav-middle flex-div">
+            <div class="search-box flex-div">
+                <input class="search-bar" type="text" placeholder="SEARCH HERE">
+                <button class="search-btn" onclick="work()"><img src="images/search.png" alt=""></button>
+
+            </div>
+            <img src="images/voice-search.png" class="mic-icon" alt="">
+        </div>
+        <div class="nav-right flex-div">
+            <img src="images/upload.png" alt="">
+            <img src="images/more.png" alt="">
+            <img src="images/notification.png" alt="">
+            <img src="images/Jack.png" class="user-icon" alt="">
+        </div>
+    </nav>
+    <!-- ---------------------------player---------------------- -->
+    <div class="container play-container">
+        <div class="row">
+            <div class="play-video">
+                <!-- <video controls autoplay src="images/video.mp4" type="video/mp4" ></video> -->
+                <div id="video-player"></div>
+                <!-- <div class="tags">
+                <a href="">#Coding</a>  <a href="">#javascript</a>  <a href="">#html</a>  <a href="">#Css</a>
+               </div> -->
+                <div class="video-all-details">
+                    <div class="details">
+                        <h3>Best Channel to learn</h3>
+                        <div class="play-video-info">
+                            <p>12K Views &bull; 2 days ago</p>
+                            <div>
+                                <a href=""><img src="images/like.png" alt="">125</a>
+                                <a href=""><img src="images/dislike.png" alt="">0</a>
+                                <a href=""><img src="images/share.png" alt="">Share</a>
+                                <a href=""><img src="images/save.png" alt="">Save</a>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="publisher">
+                            <img src="images/Jack.png" alt="">
+                            <div>
+                                <p>Channel Name</p>
+                                <span>Subscriber count 200</span>
+                            </div>
+                            <button>Subscribe</button>
+                        </div>
+                        <div class="cc">
+                            <p>Channnel Discription</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, modi.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="discription">
+                         <hr>
+                        <h4>Total Comments</h4>
+
+                        <div class="add-comment">
+                            <!-- <img src="images/Jack.png" alt="">
+                            <input type="text" name="" id="" placeholder="Write Comment"> -->
+                        </div>
+
+                        <div class="old-comment">
+                        
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- ------------------------right sidebar list---------------------- -->
+            <div class="right-sidebar">
+                <!-- <div class="side-video-list">
+                    <a href="" class="small-thumbnails"><img src="images/thumbnail1.png" alt=""></a>
+                    <div class="vid-info">
+                        <a href="">Best Video Channel</a>
+                        <p>Jannat Raj</p>
+                    </div>
+
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="./video.js"></script>
+</body>
+
+</html>
